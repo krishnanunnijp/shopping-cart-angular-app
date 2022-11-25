@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ShoppiingViewComponent } from './shoppiing-view/shoppiing-view.component';
 import { ShoppiingAddComponent } from './shoppiing-add/shoppiing-add.component';
+import { ShoppiingNavbarComponent } from './shoppiing-navbar/shoppiing-navbar.component';
  const myRoute : Routes=[
   {
     path:"",
@@ -20,7 +21,8 @@ import { ShoppiingAddComponent } from './shoppiing-add/shoppiing-add.component';
   declarations: [
     AppComponent,
     ShoppiingViewComponent,
-    ShoppiingAddComponent
+    ShoppiingAddComponent,
+    ShoppiingNavbarComponent
   ],
   imports: [
     BrowserModule,
