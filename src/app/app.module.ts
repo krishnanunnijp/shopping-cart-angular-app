@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { ShoppiingViewComponent } from './shoppiing-view/shoppiing-view.component';
 import { ShoppiingAddComponent } from './shoppiing-add/shoppiing-add.component';
 import { ShoppiingNavbarComponent } from './shoppiing-navbar/shoppiing-navbar.component';
+import { FormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http'
  const myRoute : Routes=[
   {
     path:"",
@@ -27,7 +29,9 @@ import { ShoppiingNavbarComponent } from './shoppiing-navbar/shoppiing-navbar.co
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
